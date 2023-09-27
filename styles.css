@@ -1,1 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header{
+    width: 100vw;
+    background-color: tomato;
+    padding: 8px;
+}
+header img{
+    margin-left: 5%;
+}
+#input{
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    margin-top: 8%;
+    
+
+
+}
+.styleInput{
+    border: none;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 10px;
+    height: 35px;
+    width: 200px;
+    
+}
+#dropdown{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 15%;
+}
+#gender{
+    border: none;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+}
+#activity{
+    border: none;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+}
+#mealBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#styleMealBtn{
+    border: none;
+    background-color: tomato;
+    padding: 8px;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+}
+#cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 2em;
+}
+.cardContent{
+    background-color: tomato;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    height: 19em;
+    width: 13em;
+    
+    
+}
+.cardContent h3,
+.cardContent p{
+    margin-top: 2px;
+    color: white;
+    margin-top: 1em;
+}
+
+.recipeBtn{
+    padding: 5px;
+    margin-top: 1em;
+    border: 1px solid white;
+    background-color: tomato;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    width: 100px;
+    color: white;
+    font-weight: bolder;
+}
+.foodImg img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 13em;
+    height: 10em;
+    
+}
+.foodtitle{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 9em;
+    margin: 50px 80px 0px 60px;
+    color: tomato;
+    font-size: 1.2em;
+}
+#parentIngredients{
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px;
+    
+    
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+}
+#childIg{
+    display: flex;
+    justify-content: space-between;
+    color: tomato;
+    font-weight: bolder;
+    
+
+    
+}
+.ingredients{
+    margin: 5% 0% 0% 12%;
+}
+.steps{
+    margin: 5% 18% 0% 0%;
+}
+.dishName{
+    display: flex;
+    justify-content: center;
+    color: tomato;
+    font-weight: bolder;
+}
+#entries{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+    margin: 20px 50px 0px 50px;
+    text-align: justify;
+    
+   
+
+}
+.data {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: 30px;
+    width: 70em;
+}
+#recipeStep{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.breakFastfImg{
+    width: 200px;
+    height: 150px;
+}

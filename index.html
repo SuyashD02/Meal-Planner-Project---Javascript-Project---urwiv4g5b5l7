@@ -1,1 +1,108 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Meal Planner</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" alt="logo" />
+    </header>
+    <section id="input">
+      <input
+        type="number"
+        class="styleInput hight"
+        placeholder="Enter Height"
+      />
+      <input
+        type="number"
+        class="styleInput weight"
+        placeholder="Enter Weight"
+      />
+      <input type="number" class="styleInput age" placeholder="Enter Age" />
+    </section>
+    <section id="dropdown">
+      <select name="gender" id="gender">
+        <option>Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="others">Others</option>
+      </select>
+      <select name="Activity" id="activity">
+        <option>Activity</option>
+        <option value="Light">Light</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Active">Active</option>
+      </select>
+    </section>
+    <section id="mealBtn">
+      <button id="styleMealBtn" onclick="cagender()">Generate Meals</button>
+    </section>
+    <section class="meal-Container" style="display: none">
+      <section class="foodtitle">
+        <h4>BREAKFAST</h4>
+        <h4>LUNCH</h4>
+        <h4>DINNER</h4>
+      </section>
+      <section id="cards">
+        <section class="cardContent bf-Meal">
+          <div class="foodImg">
+            <img class="breakFastfImg" alt="meal image" />
+          </div>
+          <h3 class="breakFastName"></h3>
+          <p class="bfCalories"></p>
+          <button class="recipeBtn" onclick="getBreakFastRecipe() ">
+            Get recipe
+          </button>
+        </section>
+
+        <section class="cardContent lh-Meal">
+          <div class="foodImg">
+            <img class="lunchImg" alt="meal image" />
+          </div>
+          <h3 class="lunchName"></h3>
+          <p class="lhCalories"></p>
+          <button class="recipeBtn" onclick="getLunchRecipe()">
+            Get recipe
+          </button>
+        </section>
+
+        <section class="cardContent dr-Meal">
+          <div class="foodImg">
+            <img class="dinnerImg" alt="meal image" />
+          </div>
+          <h3 class="dinnerName"></h3>
+          <p class="dCalories"></p>
+          <button class="recipeBtn" onclick="getDinnerRecipe()">
+            Get recipe
+          </button>
+        </section>
+      </section>
+    </section>
+
+    <section class="mid" style="display: none">
+      <section id="parentIngredients">
+        <h3 class="dishName"></h3>
+        <section id="childIg">
+          <h3 class="ingredients">INGREDIENTS</h3>
+          <h3 class="steps">STEPS</h3>
+        </section>
+        <section id="entries">
+          <section class="data">
+            <ul id="recipeList"></ul>
+          </section>
+
+          <section class="data">
+            <ul id="recipeStep"></ul>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <script src="App.js"></script>
+  </body>
+</html>
